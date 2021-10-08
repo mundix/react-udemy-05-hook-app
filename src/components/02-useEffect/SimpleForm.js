@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './effects.css';
+import { Message } from './Message';
 
 export const SimpleForm = () => {
 
@@ -23,16 +24,16 @@ export const SimpleForm = () => {
     useEffect(() => {
         // Cada ves qeu suceda un cambio en e mismo , no importa que cambie , vuelvete a ejecutar 
         // En el caso del input se ejecuta tantas vecs toque el teclado en input par escribir 
-        console.log('hey. corri una sola vez');
+        // console.log('hey. corri una sola vez');
     // });
     }, []); //Esto se dispara una sola ves, al poner el  [] como segundo argumento
 
     useEffect(() =>{
-        console.log('Form State cambio');
+        // console.log('Form State cambio');
     }, [formState]);
 
     useEffect(() =>{
-        console.log('El email cambio');
+        // console.log('El email cambio');
     }, [email]);
 
     return (
@@ -63,6 +64,7 @@ export const SimpleForm = () => {
                     onChange={ handleInputChange }
                     />
             </div>
+            { (name === '123') && <Message/>}
         </>
     )
 }
