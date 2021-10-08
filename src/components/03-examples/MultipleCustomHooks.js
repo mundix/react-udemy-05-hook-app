@@ -1,16 +1,44 @@
 import React from 'react';
 import '../02-useEffect/effects.css';
 import { useFetch } from '../../hooks/useFetch';
+import { useCounter } from '../../hooks/useCounter';
 
 
 export const MultipleCustomHooks = () => {
-    const url = `https://www.breakingbadapi.com/api/quotes/1`;
-    const state = useFetch(url);
-    console.log(state);
+    const {counter, increment} = useCounter(1);
+    const url = `https://www.breakingbadapi.com/api/quotes/${counter}`;
+    const { loading, data } = useFetch(url);
     
+    const {author, quote } = !!data && data[0]; //el !!data si lelga la data asigna el data en la posicion 0
+    
+
     return (
         <div>
-            <h1>Custom Hooks</h1>
+            <h1>Braking Bad Quotes</h1>
+            <hr />
+
+            {loading ?
+                (
+                    <div className="alert alert-info text-center">
+                        Loading
+                    </div>
+                ) :
+                (
+                    <blockquote className="blockquote text-right">
+                        <p className="mb-0">{quote}</p>
+                        <footer className="blockquote-footer">{author}</footer>
+                    </blockquote>
+                )
+            }
+
+            <button className="btn btn-primary"
+                onClick={()=>increment(1)}
+            >
+                Siguiente Quote
+            </button>
+
+
+
         </div>
     )
 }
