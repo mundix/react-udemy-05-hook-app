@@ -1,6 +1,5 @@
 // custom hooks no es mas que una funcion 
-
-import { useState } from "react"
+import { useState } from "react";
 
 export const useCounter = ( initialState = 10) => {
     
