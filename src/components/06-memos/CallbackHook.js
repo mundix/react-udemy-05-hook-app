@@ -10,9 +10,9 @@ export const CallbackHook = () => {
     //     setCounter( counter + 1);
     // }
 
-    const increment = useCallback(() => {
+    const increment = useCallback(( num) => {
         // setCounter(counter + 1);
-        setCounter( c => c + 1); //elimina la dependencia 
+        setCounter( c => c + num); //elimina la dependencia 
     }, [setCounter]);
 
     return (
