@@ -1,0 +1,21 @@
+body , html {
+    padding: 60px;
+}
+
+ul * {
+    background-color: #333;
+    color: white;
+}
+
+.list-group-item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.complete {
+    text-decoration: line-through;
+}
