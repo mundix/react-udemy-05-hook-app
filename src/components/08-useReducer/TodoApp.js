@@ -86,6 +86,8 @@ export const TodoApp = () => {
             <hr />
             <div className="row">
                 <div className="col-7">
+
+                    {/* TodoList  */}
                     <ul className='list-group list-group-flush'>
                         {
                             todos.map((todo, index) => (
