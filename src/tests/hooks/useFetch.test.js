@@ -30,5 +30,18 @@ describe('Pruebas en useFetch', () => {
         expect(error).toBe(null);
     })
 
+    test('Debe de manjar el error', async() => {
+        // const url = `https://www.breakingbadapi.com/api/quotes/1`;
+        const url = `https://reqres.in/apid/users?page=2`;
+        const { result, waitForNextUpdate } = renderHook(() => useFetch(url));
+        await waitForNextUpdate(); //esta es una funcion sync 
+
+        // Esto es syncrono
+        const { data, loading, error } = result.current;
+        expect(data).toBe(null);
+        expect(loading).toBe(false);
+        expect(error).toBe('No se puso cargar la info');
+    })
+    
 
 })
