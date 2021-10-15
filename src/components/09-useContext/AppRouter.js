@@ -16,6 +16,7 @@ export const AppRouter = () => {
             {/* Se recomienda usar el div  */}
             <div>
                 <NavBar/>
+                <div className="container">
                 <Switch>
                     <Route exact path='/' component={HomeScreen} />
                     <Route exact path='/about' component={AboutScreen} />
@@ -25,6 +26,7 @@ export const AppRouter = () => {
                     {/* Si no encuentra ninguna de esatas condiciones redirect to / */}
                     <Redirect to='/'/>
                 </Switch>
+                </div>
             </div>
         </Router>
     )
