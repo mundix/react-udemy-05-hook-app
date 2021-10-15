@@ -43,24 +43,22 @@ describe('Pruebas en useCounter', () => {
         act(() => {
             decrement();
         })
-        console.log(result.current);
-        // const { counter } = result.current;
-        // expect(counter).toBe(99);
+        const { counter } = result.current;
+        expect(counter).toBe(99);
     });
 
-    // test('Debe volver a valor por defecto', () => {
+    test('Debe volver a valor por defecto', () => {
 
-    //     const { result } = renderHook(() => useCounter(100));
-    //     console.log(result);
-    //     const { decrement, reset } = result.current;
+        const { result } = renderHook(() => useCounter(100));
+        const { decrement, reset } = result.current;
 
-    //     act(() => {
-    //         decrement();
-    //         reset();
-    //     });
-    //     const { counter } = result.current;
-    //     // expect(counter).toBe(100);
-    // });
+        act(() => {
+            decrement();
+            reset();
+        });
+        const { counter } = result.current;
+        expect(counter).toBe(100);
+    });
 
 
 
