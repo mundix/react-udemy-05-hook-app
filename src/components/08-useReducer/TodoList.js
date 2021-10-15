@@ -10,7 +10,13 @@ export const TodoList = ({ todos, handleDelete, handleToggle}) => {
                 todos.map((todo, index) => (
                     // TodoListITem , todo={todo} key=index, handleDelete=fn, handleToggle=fn
                     // Indice nunca como key , si no el id 
-                    <TodoListItem index={todo.id} key={index} todo={todo} handleDelete={handleDelete} handleToggle={handleToggle} />
+                    <TodoListItem 
+                        key={todo.id} 
+                        index={index} 
+                        todo={todo} 
+                        handleDelete={handleDelete} 
+                        handleToggle={handleToggle} 
+                        />
                 ))
             }
         </ul>
