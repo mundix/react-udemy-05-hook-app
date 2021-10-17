@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <TodoListItem/> Debe de mostarse correctamente 1`] = `
+<li
+  className="list-group-item"
+  key="1"
+>
+  <p
+    className="false btn-toggle-action"
+    onClick={[Function]}
+  >
+    1
+    . 
+    Aprender React
+  </p>
+  <button
+    className="btn btn-danger btn-delete-action"
+    onClick={[Function]}
+  >
+    Borrar
+  </button>
+</li>
+`;
+
+exports[`Pruebas en <TodoListItem/> Debe llamar la funciton handelToggle 1`] = `
+<li
+  className="list-group-item"
+  key="1"
+>
+  <p
+    className="false btn-toggle-action"
+    onClick={[Function]}
+  >
+    1
+    . 
+    Aprender React
+  </p>
+  <button
+    className="btn btn-danger btn-delete-action"
+    onClick={[Function]}
+  >
+    Borrar
+  </button>
+</li>
+`;
