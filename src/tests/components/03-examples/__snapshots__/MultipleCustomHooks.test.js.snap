@@ -3,7 +3,8 @@
 exports[`Pruebas en MultipleCustomHooks Muestra Correctmente MultipleCustomHooks 1`] = `
 <div>
   <h1>
-    Braking Bad Quotes
+    Braking Bad Quotes 
+    true
   </h1>
   <hr />
   <div

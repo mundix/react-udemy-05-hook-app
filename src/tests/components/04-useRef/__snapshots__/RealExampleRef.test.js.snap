@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <RealExampleRef/> Debe mostrar el <RealExampleRef/> 1`] = `
+<div>
+  <h1>
+    RealExampleRef
+  </h1>
+  <hr />
+  <button
+    className="btn btn-success mt-5"
+    onClick={[Function]}
+  >
+    Show/Hide
+  </button>
+</div>
+`;
+
+exports[`Pruebas en <RealExampleRef/> Debe mostrar el componente <MultipleCustomHooks/> 1`] = `
+<div>
+  <h1>
+    RealExampleRef
+  </h1>
+  <hr />
+  <p>
+    existe
+  </p>
+  <MultipleCustomHooks />
+  <button
+    className="btn btn-success mt-5"
+    onClick={[Function]}
+  >
+    Show/Hide
+  </button>
+</div>
+`;

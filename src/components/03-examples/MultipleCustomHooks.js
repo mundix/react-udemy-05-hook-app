@@ -14,7 +14,7 @@ export const MultipleCustomHooks = () => {
 
     return (
         <div>
-            <h1>Braking Bad Quotes</h1>
+            <h1>Braking Bad Quotes {JSON.stringify(loading, null, 3)}</h1>
             <hr />
 
             {loading ?

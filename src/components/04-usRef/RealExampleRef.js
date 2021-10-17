@@ -10,6 +10,7 @@ export const RealExampleRef = () => {
         <div>
             <h1>RealExampleRef</h1>
             <hr />
+            {show && <p>existe</p>}
             { show && <MultipleCustomHooks/>}
             
             <button className="btn btn-success mt-5"
