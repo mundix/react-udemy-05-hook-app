@@ -34,6 +34,7 @@ describe('Pruebas en todoReducer', () => {
         const state = todoReducer(demoTodos, action);
         expect(state.length).toBe(1);
 
+
     });
 
     test('Probando el TOGGLE', () => {
@@ -42,8 +43,9 @@ describe('Pruebas en todoReducer', () => {
             payload: 1,
         }
         const state = todoReducer(demoTodos, action);
-        console.log(state[0]);
         expect(state[0].done).toBe(true);
+        expect(state[1].done).toBe(false);
+        expect(state[1]).toEqual(demoTodos[1]); //Comparando el objeto completo 
     })
 
 
