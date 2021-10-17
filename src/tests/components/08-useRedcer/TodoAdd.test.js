@@ -46,6 +46,8 @@ describe('Pruebas en <TodoAdd/>', () => {
             desc: value,
             done: false
         });
+
+        expect(wrapper.find('input').prop('value')).toBe('');
     })
     
 })
