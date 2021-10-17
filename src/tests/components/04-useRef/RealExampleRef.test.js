@@ -3,11 +3,7 @@ import { shallow } from 'enzyme';
 import { RealExampleRef } from '../../../components/04-usRef/RealExampleRef';
 
 describe('Pruebas en <RealExampleRef/>', () => {
-    let wrapper = shallow(<RealExampleRef/>);
-
-    beforeEach(() => {
-        let wrapper = shallow(<RealExampleRef/>);
-    });
+    const wrapper = shallow(<RealExampleRef/>);
     
     test('Debe mostrar el <RealExampleRef/>', () => {
         expect(wrapper).toMatchSnapshot();
