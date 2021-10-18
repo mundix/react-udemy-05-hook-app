@@ -7,7 +7,7 @@ export const HomeScreen = () => {
     // Me devuelve todo lo que envie en el value del UserContext.Provider
     // const userContext = useContext(UserContext);
     const {user} = useContext(UserContext);
-    console.log(user);
+    // console.log(user);
 
     return (
         <div>
